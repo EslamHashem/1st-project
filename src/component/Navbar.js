@@ -23,18 +23,17 @@ function Navbar() {
             <div className="logo" id={openLinks ? "open" : "close"}>
                 <img src={logo} alt="" />
                 <div className="hiddenLinks">
-                    <Link to="/home"> Home </Link>
+                    <Link to="/"> Home </Link>
                     <Link to="/menu"> Menu </Link>
                     <Link to="/about"> About </Link>
                     <Link to="/contact"> Contact </Link>
                 </div>
             </div>
             <div className="links">
-                <Link to="/home"> Home </Link>
+                <Link to="/"> Home </Link>
                 <Link to="/menu"> Menu </Link>
                 <Link to="/about"> About </Link>
                 <Link to="/contact"> Contact </Link>
-                <Link to="/click">Click Here</Link>
                 <button onClick={handleClick}>
                     <ReorderIcon />
                 </button>

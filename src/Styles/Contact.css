@@ -55,7 +55,7 @@ form textarea {
 input::placeholder,
 textarea::placeholder {
     font-weight: bold;
-    color: black;
+    color: rgb(85, 89, 97);
     font-family: Arial, Helvetica, sans-serif;
 }
 form input:focus,
@@ -81,13 +81,15 @@ form button {
 
 @media(max-width:767px){ /* Mobile & tablet */
     .contact {
-        height: 150vh;
-        
+        width: 60rem;
+        height: 137rem;
     }
 }
 
 @media(min-width:768px) and (max-width:991px){
-
+    .contact {
+        height: 90rem;
+    }
 }
 @media(min-width:992px) and (max-width:1199px) {
 
