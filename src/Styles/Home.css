@@ -61,7 +61,7 @@
 @media(max-width:767px){ /* Mobile & tablet */
     .home {
         width: 60.1rem;
-        height: 267vh;
+        height: 282vh;
         justify-content: center;
         align-items: center;
     }
@@ -103,10 +103,16 @@
 }
 
 @media(min-width:768px) and (max-width:991px){
-
+    .home {
+        width: 56.5rem;
+        height: 125vh;
+    }
 }
 @media(min-width:992px) and (max-width:1199px) {
-
+    .home {
+        width: 67.6rem;
+        height: 125vh;
+    }
 }
 @media(min-width:1200px) {
 

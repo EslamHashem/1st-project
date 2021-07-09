@@ -82,13 +82,14 @@ form button {
 @media(max-width:767px){ /* Mobile & tablet */
     .contact {
         width: 60rem;
-        height: 137rem;
+        height: 193rem;
     }
 }
 
 @media(min-width:768px) and (max-width:991px){
     .contact {
-        height: 90rem;
+        height: 95.5rem;
+        width: 56.5rem;
     }
 }
 @media(min-width:992px) and (max-width:1199px) {

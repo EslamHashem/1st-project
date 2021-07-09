@@ -27,13 +27,30 @@
 .navbar a {
     color: white;
     text-decoration: none;
-    width: 100%;
+    display: inline-block;
+    margin: 6rem;
 }
 
-.navbar a:hover {
-    color: goldenrod;
-    font-weight: 1000;
-    transition: 0.5s all;
+.navbar a::before,
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    bottom: -5px;
+    border-bottom: solid 3px rgb(221, 169, 56);
+}
+.navbar a::before { left: 0; }
+.navbar a::after {right: 0;}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+    width: 50%;
+    height: 3px;
+}
+
+.navbar a::before,
+.navbar a::after {
+    transition: all 0.3s ease;
 }
 
 .navbar .links button {
@@ -87,6 +104,14 @@
         padding-right: 80px;
         justify-content: flex-end;
     }
+    .navbar a::before,
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        bottom: 0px;
+        border-bottom: solid 0px rgb(221, 169, 56);
+    }
     .navbar .logo {
         padding-left: 50px;
     }
@@ -96,6 +121,16 @@
 }
 
 @media(min-width:768px) and (max-width:991px){
+    .navbar {
+        width: 56.5rem;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        margin: 2rem;
+    }
     .navbar .links button {
         display: none;
     }
@@ -103,13 +138,21 @@
         width: 100%;
         padding-right: 20px;
     }
+    .navbar a::before,
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        bottom: 0px;
+        border-bottom: solid 0px rgb(221, 169, 56);
+    }
     .navbar .logo {
         padding-left: 60px;
     }
 }
 @media(min-width:992px) and (max-width:1199px) {
     .navbar {
-        width: 100%;
+        width: 67.6rem;
     }
     .navbar .links button {
         display: none;
@@ -120,10 +163,39 @@
         width: 100%;
     }
     .navbar .links a {
-        width: 70%;
+        margin: 6rem;
     }
     .navbar .links button {
         display: none;
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        width: 100%;
+        display: inline-block;
+        margin: 9rem;
+    }
+    
+    .navbar a::before,
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        bottom: -5px;
+        border-bottom: solid 3px rgb(221, 169, 56);
+    }
+    .navbar a::before { left: 0; }
+    .navbar a::after {right: 0;}
+    
+    .navbar a:hover:before,
+    .navbar a:hover:after {
+        width: 50%;
+        height: 3px;
+    }
+    
+    .navbar a::before,
+    .navbar a::after {
+        transition: all 0.3s ease;
     }
 }
 

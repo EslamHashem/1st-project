@@ -40,18 +40,23 @@
 
 @media(min-width:768px) and (max-width:991px){
     .footer {
-        width: 51rem;
-        height: 9rem;
+        width: 56.5rem;
+        height: 8rem;
         position: fixed;
         bottom: 0;
         left: 0;
     }
     .footer svg {
-        font-size: 55px;
+        font-size: 50px;
+    }
+    .footer p {
+        font-size: 20px;
     }
 }
 @media(min-width:992px) and (max-width:1199px) {
-
+    .footer {
+        width: 67.6rem;
+    }
 }
 @media(min-width:1200px) {
 
